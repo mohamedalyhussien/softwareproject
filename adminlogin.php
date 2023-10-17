@@ -47,6 +47,7 @@ if(isset($_POST['login']))
 <body style="background-image: url(images/hospital.jpg);background-repeat:no-repeat;background-size:cover;">
     <?php
     include("include/header.php");
+    include("include/connection.php");
     ?>
 
 <div style="margin-top: 20px;"></div>
