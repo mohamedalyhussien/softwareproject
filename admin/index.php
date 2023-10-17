@@ -39,7 +39,7 @@
                                             <h5 class="text-white">Admin</h5>
                                         </div>
                                         <div class="col-md-3">
-                                           <a href=""> <i class="fa fa-users-cog fa-3x my-2" style="color:white;"></i></a>
+                                           <a href="admin.php"> <i class="fa fa-users-cog fa-3x my-2" style="color:white;"></i></a>
                                     </div>
                                     </div>
                                     
