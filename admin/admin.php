@@ -41,7 +41,7 @@ session_start();
                             ";
                             if(mysqli_num_rows($res)<1)
                             {
-                                $output .= "<tr><td colspan ='3class='text-center'>No New Admin</td></tr>";
+                                $output .= "<tr><td colspan ='3'class='text-center'>No New Admin</td></tr>";
                             }
                             while($row=mysqli_fetch_array($res))
                             {
