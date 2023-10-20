@@ -114,7 +114,7 @@ session_start();
                                 $result=mysqli_query($connect,$q);
 
                                 if($result){
-                                    move_uploaded_file($_FILES['img']['tmp_name'],"img/$image");
+                                    move_uploaded_file($_FILES['img']['name'],"img/$image");
                                 }
                                 else{
 
