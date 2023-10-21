@@ -39,14 +39,14 @@ session_start();
                                 <th style='width:10%;'>Action</th>
                             <tr>
                             ";
-                            if(mysqli_num_rows($res)<1)
+                            if(mysqli_num_rows($res) < 1)
                             {
                                 $output .= "<tr><td colspan ='3'class='text-center'>No New Admin</td></tr>";
                             }
-                            while($row=mysqli_fetch_array($res))
+                            while($row = mysqli_fetch_array($res))
                             {
-                                $id=$row['id'];
-                                $username=$row['usename'];
+                                $id = $row['id'];
+                                $username = $row['username'];
 
                                 $output .="
                                 
@@ -54,7 +54,7 @@ session_start();
                                     <td>$id</td>
                                     <td>$username</td>
                                     <td>
-                                    <a href='admin?id=$id'>    <button id='$id' class='btn btn-danger remove'>Remove</button> </a>
+                                    <a href='admin?id=$id'><button id='$id' class='btn btn-danger remove'>Remove</button></a>
                                     </td>
                             
                                 ";
@@ -67,13 +67,14 @@ session_start();
                             ";
                             echo $output;
 
+                            
 
                             //Function To delete admin by remove button
 
                             if(isset( $_GET['id'])){
                                 $id=$_GET['id'];
 
-                                $query="DELETE FROM admin WHERE id='$id'";
+                                $query=" DELETE FROM admin WHERE id = '$id'";
                                 mysqli_query($connect,$query);
                             }
 
@@ -102,19 +103,19 @@ session_start();
                             else if(empty($pass)){
                                 $error['u']="Enter Admin password";
                             }
-                            else if(empty($_image)){
+                            else if(empty($image)){
                                 $error['u']="Enter Admin picture";
                             }
 
 
                             if(count($error)==0){
-                                $q="INSERT INTO admin(username,password,profile)
-                                VALUES('$uname,$pass,$image')";
+                                $q="INSERT INTO admin(username , password,profile)
+                                VALUES('$uname','$pass','$image')";
 
-                                $result=mysqli_query($connect,$q);
+                                $result = mysqli_query($connect,$q);
 
                                 if($result){
-                                    move_uploaded_file($_FILES['img']['name'],"img/$image");
+                                    move_uploaded_file($_FILES['img']['tmp_name'],"img/$image");
                                 }
                                 else{
 
