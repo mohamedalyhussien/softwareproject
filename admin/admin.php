@@ -45,7 +45,7 @@ session_start();
                             }
                             while($row = mysqli_fetch_array($res))
                             {
-                                $id = $row['id'];
+                                $id = $row['id'];   
                                 $username = $row['username'];
 
                                 $output .="
@@ -54,7 +54,7 @@ session_start();
                                     <td>$id</td>
                                     <td>$username</td>
                                     <td>
-                                    <a href='admin?id=$id'><button id='$id' class='btn btn-danger remove'>Remove</button></a>
+                                    <a href='admin.php?id=$id'><button id='$id' class='btn btn-danger remove'>Remove</button></a>
                                     </td>
                             
                                 ";
