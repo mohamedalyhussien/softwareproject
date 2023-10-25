@@ -19,21 +19,29 @@ if(isset($_POST['apply'])){
 
     if(empty($firstname)){
         $error['apply']="Enter first name";
-    }else if(empty($surname)){
+    }
+     if(empty($surname)){
         $error['apply']="Enter surname";
-    }else if(empty($username)){
+    }
+     if(empty($username)){
         $error['apply']="Enter Username";
-    }else if(empty($email)){
+    }
+     if(empty($email)){
         $error['apply']="Enter Email";
-    }else if(empty($gender)){
+    }
+     if(empty($gender)){
         $error['apply']="Enter Gender";
-    }else if(empty($phone)){
+    }
+     if(empty($phone)){
         $error['apply']="Enter phone";
-    }else if(empty($country)){
+    }
+     if(empty($country)){
         $error['apply']="Enter country";
-    }else if(empty($password)){
+    }
+     if(empty($password)){
         $error['apply']="Enter Password";
-    }else if(empty($confirm_password)){
+    }
+     if(empty($confirm_password)){
         $error['apply']="Both password do not match";
     }
 
@@ -160,7 +168,7 @@ include("include/header.php");
                         autocomplete="off" placeholder="Confirm Password">
                     </div>  
 
-                    <input type="submit" value="Apply Now!!" name="Apply" class="btn btn-success">
+                    <input type="submit" value="Apply Now!!" name="apply" class="btn btn-success">
                     <p>I already have an account <a href="doctorlogin.php">Click here</a></p>
 
                    </form>
