@@ -20,28 +20,31 @@ if(isset($_POST['apply'])){
     if(empty($firstname)){
         $error['apply']="Enter first name";
     }
-     if(empty($surname)){
+    else if(empty($surname)){
         $error['apply']="Enter surname";
     }
-     if(empty($username)){
+    else if(empty($username)){
         $error['apply']="Enter Username";
     }
-     if(empty($email)){
+    else if(empty($email)){
         $error['apply']="Enter Email";
     }
-     if(empty($gender)){
+    else if($gender==""){
         $error['apply']="Enter Gender";
     }
-     if(empty($phone)){
+    else if(empty($phone)){
         $error['apply']="Enter phone";
     }
-     if(empty($country)){
+    else if($country==""){
         $error['apply']="Enter country";
     }
-     if(empty($password)){
+    else if(empty($password)){
         $error['apply']="Enter Password";
     }
-     if(empty($confirm_password)){
+    else if(empty($confirm_password)){
+        $error['apply']="confirm your Password";
+    }
+    else if($confirm_password!=$password){
         $error['apply']="Both password do not match";
     }
 
