@@ -149,8 +149,8 @@ include("include/header.php");
                         <label>Select Country</label>
                         <select name="country">
                             <option value="">Select Country </option>
-                            <option value="Russia">Egypt</option>
-                            <option value="Russia">Palestine</option>
+                            <option value="Egypt">Egypt</option>
+                            <option value="Palestine">Palestine</option>
                             <option value="Russia">Russia</option>
                             <option value="India">India</option>
                         </select>
@@ -163,12 +163,13 @@ include("include/header.php");
                     </div>
 
                     <div class="form-group">
-                        <label> Confirm Password:</label>
+                        <label> Confirm Password:</label>   
                         <input type="password" name="con_pass" class="form-control"
                         autocomplete="off" placeholder="Confirm Password">
                     </div>  
 
                     <input type="submit" value="Apply Now!!" name="apply" class="btn btn-success">
+                    <!-- <button type="submit" value="Apply Now!!" name="apply" class="btn btn-success">submit</button> -->
                     <p>I already have an account <a href="doctorlogin.php">Click here</a></p>
 
                    </form>
