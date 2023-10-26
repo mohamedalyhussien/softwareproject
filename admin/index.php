@@ -15,7 +15,7 @@
     <div class="container-fluid">
         <div class="col-md-12">
             <div class="row">
-                <div class="col-md-2" style="margin-left:-20px">
+                <div class="col-md-2" style="margin-left:-30px">
 
                 <?php
                 include("sidenav.php");
@@ -49,12 +49,16 @@
                         <div class ="col-md-12">
                                     <div class="row">
                                         <div class="col-md-9">
-                                            <h5 class="my-2 text-white" style="font-size:30px;">0</h5>
+                                            <?php 
+                                            $doctor = mysqli_query($connect,"SELECT * FROM doctors WHERE status= 'Approved'");
+                                            $num2 =mysqli_num_rows($doctor);
+                                            ?>
+                                            <h5 class="my-2 text-white" style="font-size:30px;"><?php echo $num2; ?></h5>
                                             <h5 class="text-white">Total</h5>
                                             <h5 class="text-white">Doctors</h5>
                                         </div>
                                         <div class="col-md-3">
-                                           <a href=""> <i class="fa fa-user-md fa-3x my-2" style="color:white;"></i></a>
+                                           <a href="doctor.php"> <i class="fa fa-user-md fa-3x my-2" style="color:white;"></i></a>
                                     </div>
                                     </div>
                                     

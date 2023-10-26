@@ -21,15 +21,15 @@ $output .="
 
 
 
-if(mysqli_num_rows($res)<1){
+if(mysqli_num_rows($res) < 1){
 $output .= "
 <tr>
 <td colspan='10'class='text-center'>No Job Request Yet.</td>
 </tr>
 ";
 }
-while($row=mysqli_fetch_array($res)){
-    $output .="
+while($row = mysqli_fetch_array($res)){
+    $output .= "
     <tr>
     <td>".$row['id']."</td>
     <td>".$row['firstname']."</td>
