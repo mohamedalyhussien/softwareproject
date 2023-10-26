@@ -1,5 +1,5 @@
 <?php
-
+session_start();
 include("include/connection.php");
 
 if(isset($_POST['login'])){
@@ -33,6 +33,7 @@ if(isset($_POST['login'])){
         if(mysqli_num_rows($res)){
             echo "<script>alert('done')</script";
             $_SESSION['doctor']=$uname;
+            header("Location:doctor/index.php");
         }else{
             echo "<script>alert('Invalid account')</script";
 
