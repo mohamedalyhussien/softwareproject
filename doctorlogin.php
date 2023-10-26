@@ -1,5 +1,5 @@
 <?php
-session_start();
+
 include("include/connection.php");
 
 if(isset($_POST['login'])){
@@ -33,7 +33,6 @@ if(isset($_POST['login'])){
         if(mysqli_num_rows($res)){
             echo "<script>alert('done')</script";
             $_SESSION['doctor']=$uname;
-            header("Location:doctor/index.php");
         }else{
             echo "<script>alert('Invalid account')</script";
 
@@ -66,13 +65,18 @@ if(isset($error['login'])){
     <?php
     include("include/header.php");
     ?>
+    <div class="container-fluid py-5">
+        <div class="container">
+            <div class="text-center mx-auto mb-5" style="max-width: 500px;">
+                <h5 class="d-inline-block text-primary text-uppercase border-bottom border-5">Doctors login</h5>
+                
 
     <div class="container-fluid">
         <div class="col-md-12">
             <div class="row">
                 <div class="col-md-3"> </div>
                    <div class="col-md-6 jumbotron my-3">
-                    <h5 class="text-center my-2">Doctors Login</h5>
+                   
 
                     <div>
                         <?php echo $show; ?>

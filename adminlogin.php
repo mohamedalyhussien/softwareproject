@@ -42,14 +42,18 @@ if(isset($_POST['login']))
 <!DOCTYPE html>
 <html lang="en">
 <head>
+
      <title>Admin login Page</title>
 </head>
-<body style="background-image: url(images/hospital.jpg);background-repeat:no-repeat;background-size:cover;">
+
     <?php
     include("include/header.php");
     include("include/connection.php");
     ?>
-
+<div class="container-fluid py-5">
+        <div class="container">
+            <div class="text-center mx-auto mb-5" style="max-width: 500px;">
+                <h5 class="d-inline-block text-primary text-uppercase border-bottom border-5">Admins login</h5>
 <div style="margin-top: 20px;"></div>
 <div class="container">
     <div class="col-md-12">
@@ -57,7 +61,7 @@ if(isset($_POST['login']))
             <div class="col-md-3"></div>
             <div class="col-md-6 jumbotron">
                 <!-- jumbotron dih background lel form bas msh shaghalaa -->
-                <img src="images/admin.jpg" class="col-md-12">
+                <img src="images/log.jpg" class="col-md-12">
                 <form method="post" class="my-2">
                     <div >
                         <?php
