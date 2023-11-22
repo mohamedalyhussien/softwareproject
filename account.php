@@ -51,7 +51,16 @@ if(isset($_POST['create']))
         $error['ac']="Both passwords do not match!";
     }
 
-
+if(count($error)==0)
+{
+    $query = "INSERT INTO patient(firstname, surname, username, email, phone, gender, country, password, date_reg, profile) VALUES('$fname','$sname','$uname','$email','$phone','$gender','$country','$password',NOW(),'patient.jpg')";
+    $res = mysqli_query($connect,$query);
+    if($res){
+        header("Location: patientlogin.php");
+    }else{
+        echo "<script>alert('failed')</script> ";
+    }
+}
 
     
 }

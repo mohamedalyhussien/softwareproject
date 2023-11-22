@@ -1,3 +1,29 @@
+ <?php
+ session_start();
+ include("include/connection.php");
+
+ if(isset($_POST['login'])){
+    $uname=$_POST['uname'];
+    $pass= $_POST['pass'];
+
+    if(empty($uname)){
+        echo "<script> alert('Enter Username')</script> ";
+    }else if(empty($pass)){
+        echo "<script> alert('Enter Password')</script> ";
+    }
+    else{
+        $query= "SELECT * FROM patient WHERE username = '$uname' AND password ='$pass'";
+        $res = mysqli_query($connect,$query);
+        if(mysqli_num_rows($res)==1){
+            header("Location: patient/index.php");
+            $_SESSION['patient']= $uname;
+        }
+        else{
+            echo "<script> alert('Invalid Account')</script> ";
+        }
+    }
+ }
+ ?>
 <!DOCTYPE html>
 <html lang="en">
 <head>
