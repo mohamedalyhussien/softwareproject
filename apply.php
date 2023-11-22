@@ -17,7 +17,7 @@ if(isset($_POST['apply'])){
 
     $error=array();
 
-    if(empty($firstname)){
+    if(em   pty($firstname)){
         $error['apply']="Enter first name";
     }
     else if(empty($surname)){

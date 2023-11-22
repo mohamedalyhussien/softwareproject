@@ -45,7 +45,7 @@ if(isset($_POST['login']))
 
      <title>Admin login Page</title>
 </head>
-
+<body>
     <?php
     include("include/header.php");
     include("include/connection.php");
