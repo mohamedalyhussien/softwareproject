@@ -51,7 +51,7 @@
                             <label>Password</label>
                             <input type="text" name="pass" class="form-control" autocomplete="off" placeholder ="Enter Password">
                         </div>
-                        <input type="submit" value="login" class="btn btn-info my-3" value="Login">
+                        <input type="submit" value="login" class="btn btn-info my-3" value="Login" name="login">
                         <p>I don't have an account <a href="account.php">Click here.</a></p>
                     </form>
                 </div>
