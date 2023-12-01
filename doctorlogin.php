@@ -31,8 +31,9 @@ if(isset($_POST['login'])){
         $res=mysqli_query($connect,$query);
 
         if(mysqli_num_rows($res)){
-            echo "<script>alert('done')</script";
             $_SESSION['doctor']=$uname;
+            echo "<script>alert('done')</script";
+            header("Location:doctor/index.php");
         }else{
             echo "<script>alert('Invalid account')</script";
 
