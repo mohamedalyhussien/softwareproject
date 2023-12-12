@@ -64,7 +64,14 @@ include("../include/connection.php");
                                 <div class="col-md-12">
                                     <div class="row">
                                         <div class="col-md-8">
-                                        <h5 class="text-white my-2 "style="font-size:30px;">0</h5>
+                                            <?php
+                                            $app=mysqli_query($connect,"SELECT * FROM appointment ");
+
+                                            $appoint=mysqli_num_rows($app);
+                                            ?>
+                                        <h5 class="text-white my-2 "style="font-size:30px;"><?php
+                                        echo $appoint;
+                                        ?></h5>
                                         <h5 class="text-white ">Total</h5>
                                             <h5 class="text-white ">Appointement</h5>
                                         </div>
