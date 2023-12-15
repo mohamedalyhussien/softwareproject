@@ -76,7 +76,7 @@ include("../include/connection.php");
                                             <h5 class="text-white ">Appointement</h5>
                                         </div>
                                         <div class="col-md-4">
-                                           <a href="#"> <i class="fa fa-user-circle fa-3x my-4" style="color:white;"></i></a>
+                                           <a href="doctorappointment.php"> <i class="fa fa-user-circle fa-3x my-4" style="color:white;"></i></a>
                                         </div>
                                     </div>
                                 </div>
