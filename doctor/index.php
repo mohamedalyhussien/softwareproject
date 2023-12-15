@@ -25,6 +25,7 @@ include("../include/connection.php");
             </div>
             <div class="col-md-10">
                 <div class="container-fluid">
+                    <br>
                     <h5 class="text-center">Doctor's Dashboard</h5>
                     <div class="col-md-12">
                         <div class="row">

@@ -54,7 +54,8 @@ session_start();
                     </tr>
                    
                     
-                    ";
+                    ";  
+                    
                         if(mysqli_num_rows($querys)<1){
                                 $output.="
                                 <tr>
