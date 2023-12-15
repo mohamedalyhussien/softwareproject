@@ -1,4 +1,6 @@
-<?php  ?>
+<?php 
+session_start();
+?>
 
 <!DOCTYPE html>
 <html lang="en">
@@ -27,12 +29,12 @@
 <?php
 
 $pat=$_SESSION['patient'];
-$sel=mysqli_query($connect,"SELECT * FROM patient WHERE username='$pat'");
+$sel=mysqli_query($connect,"SELECT * FROM patient WHERE username='$pat'");  
 
 $row=mysqli_fetch_array($sel);
 
 $firstname=$row['firstname'];
-$surname=$row['surname'];   
+$surname=$row['surname']; 
 $gender=$row['gender'];
 $phone=$row['phone'];
 
@@ -44,8 +46,8 @@ if(isset($_POST['book'])){
     if(empty($sym)){
 
     }else{
-        $query="INSERT INTO apponitment(firstname, surname, gender, phone, appointment_date, symptoms, status, date_booked) 
-        VALUES('$firstname','$surname','$gender','$phone','$sym','Pendding',NOW())";
+        $query="INSERT INTO appointment(firstname,surname,gender,phone,appointment_date,symptoms,status,date_booked) 
+        VALUES('$firstname','$surname','$gender','$phone','$date','$sym','Pendding',NOW())";
 
         $res = mysqli_query($connect,$query);
 
