@@ -69,7 +69,7 @@ while($row=mysqli_fetch_array($res)){
         <td>".$row['phone']."</td>
         <td>".$row['date_booked']."</td>
         <td>
-        <a href='discharge.php?id=".$row['id']."'
+        <a href='dicharge.php?id=".$row['id']."'
         <button class='btn btn-info'>Check</button>
         </a>
         </td>

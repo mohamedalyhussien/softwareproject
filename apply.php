@@ -56,7 +56,7 @@ if(isset($_POST['apply'])){
         $result=mysqli_query($connect,$query);
 
         if($result){
-            echo"<script>alert('Yo have succefully appled')</script> ";
+            echo"<script>alert('You have succefully appled')</script> ";
 
             header("Location:doctorlogin.php");
         }else{

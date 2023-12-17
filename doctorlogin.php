@@ -1,4 +1,5 @@
 <?php
+session_start();
 
 include("include/connection.php");
 
@@ -18,10 +19,12 @@ if(isset($_POST['login'])){
         $error['login']="Enter Username";
     }else if(empty($password)){
         $error['login']="Enter Password";
-    }else if($row['status']=="Pendding"){
-        $error['login']="Please for the admin to confirm";
-    }else if($row['status']=="Rejected"){
-        $error['login']="please try again";
+    }else if($row!=null){
+        if($res['status']=="Pendding"){
+            $error['login']="Please check for the admin to confirm";
+        }else if($res['status']=='Rejected'){
+            $error['login']="please try again";
+        }
     }
 
     if(count($error)==0){
@@ -29,13 +32,13 @@ if(isset($_POST['login'])){
         $query="SELECT * FROM doctors where username='$uname' AND password='$password'";
 
         $res=mysqli_query($connect,$query);
-
+       
         if(mysqli_num_rows($res)){
             $_SESSION['doctor']=$uname;
             echo "<script>alert('done')</script";
             header("Location:doctor/index.php");
         }else{
-            echo "<script>alert('Invalid account')</script";
+            $error['login']="wrong email or password";
 
         }
     }
