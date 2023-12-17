@@ -53,7 +53,7 @@ session_start();
                                             <h5 class="text-white my-4">Book Appointment</h5>
                                         </div>
                                         <div class="col-md-4">
-                                            <a href="appointment.php...............">
+                                            <a href="appointment.php">
                                                 <i class="fa fa-calendar fa-3x my-4" style="color:white;"></i>
                                             </a>
                                         </div>
@@ -82,53 +82,7 @@ session_start();
                         
                     </div>
 
-                    <?php
-                        if(isset($_POST['send'])){
-                            $title=$_POST['send'];
-                            $message=$_POST['message'];
-
-
-                            if(empty($title))
-                            {
-
-                            }else if(empty($message))
-                            {
-
-                            }else{
-                                $user = $_SESSION['patient'];
-                                $query = "INSERT INTO report(title,message,username,date_send) Values('$title','$message','$user',NOW())";
-                                $res= mysqli_query($connect,$query);
-
-                                if($res)
-                                {
-
-                                    echo "<script> alert('You have sent your Report')</script> ";
-                                }
-                            }
-                        }
-                        
-
-
-                    ?>
-
-                    <div class="col-md-12">
-                        <div class="row">
-                            <div class="col-md-3"></div>
-                            <div class="col-md-6 jumbotron bg-info my-5">
-                                <h5 class="text-center my-2">Send A Report</h5>
-                                <form method="post">
-                                    <label> Title</label>
-                                    <input type="text" name="title"autocomplete ="off" class="form-control" placeholder="Enter Title of the report">
-                                    <label>Message</label>
-                                    <input type="text" name="message" autocomplete="off"class="form-control" placeholder="Enter Message">
-                                    <input type="submit" name="send" value="Send Report"class="btn btn-success my-2">
-
-                                </form>
-                            </div>
-                            <div class="col-md-3"></div>
-                        </div>
-                    </div>
-
+                    
 
 
                 </div>

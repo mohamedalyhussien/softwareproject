@@ -73,13 +73,13 @@ session_start();
                                 <td>".$row['amount_paid']."</td>
                                 <td>".$row['description']."</td>
                                 <td>
-                                <a href='check.php?id=".$row['id']."'>
+                                <a href='viewinvoice.php?id=".$row['id']."'>
                                 <button class='btn btn-info'>View</button>
                                 </a>
                                 </td>
                             ";
                         }
-                            $output.="</tr></table>";
+                            $output .= "</tr></table>";
 
                             echo $output;
                     ?>

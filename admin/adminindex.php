@@ -23,7 +23,7 @@
 
                 </div>
                 <div class="col-md-10">
-                    <h4 class="my-2">Admin Dashboard</h4>
+                    <h4 class="my-2 text-center">Admin Dashboard</h4>
                 <div class="col-md-12 my-5">
                     <div class="row"> 
                         <div class="col-md-3 bg-success mx-1" style="height:130px;">
