@@ -66,13 +66,11 @@ include("../include/connection.php");
                                     <div class="row">
                                         <div class="col-md-8">
                                             <?php
-                                            $app=mysqli_query($connect,"SELECT * FROM appointment ");
+                                            $app=mysqli_query($connect,"SELECT * FROM appointment");
 
                                             $appoint=mysqli_num_rows($app);
                                             ?>
-                                        <h5 class="text-white my-2 "style="font-size:30px;"><?php
-                                        echo $appoint;
-                                        ?></h5>
+                                        <h5 class="text-white my-2 "style="font-size:30px;"><?php echo $appoint;?></h5>
                                         <h5 class="text-white ">Total</h5>
                                             <h5 class="text-white ">Appointement</h5>
                                         </div>

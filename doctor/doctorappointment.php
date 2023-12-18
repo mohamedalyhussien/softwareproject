@@ -19,7 +19,7 @@ session_start();
     <div class="container-fluid">
         <div class="col-md-12">
             <div class="row">
-            <div class="col-md-2" style="margin: left 30px;">
+            <div class="col-md-2" style="margin:left 30px">
             <?php
             include("sidenav.php");
             ?>
@@ -28,12 +28,12 @@ session_start();
             <h5 class="text-center my-2"> Total appointment </h5>
         <?php
         
-        $query="SELECT * FROM appointment WHERE status='Pendding'";
+        $query="SELECT * FROM appointment WHERE status='Pending'";
         $res=mysqli_query($connect,$query);
 
         $output="";
 
-        $output .=";
+        $output .="
     <table class='table table-bordered'>
   <tr>
   <td>ID</td>
@@ -41,9 +41,10 @@ session_start();
   <td>surname</td>
   <td>Gender</td>
   <td>phone</td>
-  <td>Appointment</td>
+  <td>Appointment Date</td>
   <td>symptoms</td>
   <td>Data booked</td>
+  <td>Action</td>
 
 </tr>
 ";
@@ -66,10 +67,10 @@ while($row=mysqli_fetch_array($res)){
         <td>".$row['gender']."</td>
         <td>".$row['phone']."</td>
         <td>".$row['appointment_date']."</td>
-        <td>".$row['phone']."</td>
+        <td>".$row['symptoms']."</td>
         <td>".$row['date_booked']."</td>
         <td>
-        <a href='dicharge.php?id=".$row['id']."'
+        <a href='dicharge.php?id=".$row['id']."'>
         <button class='btn btn-info'>Check</button>
         </a>
         </td>
@@ -78,7 +79,9 @@ while($row=mysqli_fetch_array($res)){
     ";
 }
 
-$output.="</tr></table>";
+$output.="
+</tr>
+</table>";
 
 echo $output;
 
