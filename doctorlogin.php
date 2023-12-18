@@ -20,10 +20,10 @@ if(isset($_POST['login'])){
     }else if(empty($password)){
         $error['login']="Enter Password";
     }else if($row!=null){
-        if($res['status']=="Pendding"){
+        if($row['status']=="Pendding"){
             $error['login']="Please check for the admin to confirm";
-        }else if($res['status']=='Rejected'){
-            $error['login']="please try again";
+        }else if($row['status']=="Rejected"){
+            $error['login']="Sorry you are rejected, Try again later :)";
         }
     }
 

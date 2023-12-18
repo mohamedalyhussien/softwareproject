@@ -62,7 +62,7 @@ session_start();
                             ?>
                             <form method="post" enctype="multipart/form-data">
                                 <?php
-                               echo" <img src='img/$profiles' class=' col-md-12' style='height:250px;'>";
+                               echo" <img src='img/$profiles' class=' col-md-12' style='height:500px;'>";
                                 ?>
                                 <br> <br>
                                 <div class="form-group">

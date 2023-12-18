@@ -28,7 +28,7 @@ if(isset($_POST['login']))
             
             $_SESSION['admin'] = $username;
 
-          header("Location:admin/adminindex.php");
+          header("Location:admin/index.php");
           exit();
         }
       

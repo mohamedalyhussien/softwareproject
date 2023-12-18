@@ -50,7 +50,7 @@ include("../include/header.php");
 
                             <form method="post" enctype="multipart/form-data">
                                 <?php
-                                echo "<img src='img/".$row['profile']."' style='height:250px;' class='col-md-12 my-3'>"
+                                echo "<img src='img/$profiles' style='height:250px;' class='col-md-12 my-3'>"
                                 ?>
                                 <input type="file" name="img" class="form-control">
                                 <input type="submit" name="upload" class="btn btn-success" value="Update Profile">
