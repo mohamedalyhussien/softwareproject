@@ -95,7 +95,7 @@ if(isset($error['login'])){
 
                              <div class="form-group">
                             <label>Password:</label>
-                            <input type="password" name="pass" class="form-control" autocomplete="off">
+                            <input type="password" name="pass" class="form-control" autocomplete="off" placeholder="Enter Password">
                         </div>
 
                         <input type="submit" name="login" class="btn btn-success" value="login">

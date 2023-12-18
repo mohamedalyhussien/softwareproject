@@ -41,7 +41,7 @@ session_start();
                     $output="";
 
                     $output.="
-                    <table> 
+                    <table class='table table-bordered'> 
                     <tr> 
                     <td>ID</td>
                     <td>Doctor</td>
