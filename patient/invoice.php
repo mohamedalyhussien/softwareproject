@@ -14,7 +14,7 @@ session_start();
     include("../include/connection.php");
     ?>
 
-    <div class="container-flluid">
+    <div class="container-fluid">
         <div class="col-md-12">
             <div class="row">
                 <div class="col-md-2" style="margin-left: -30px;">

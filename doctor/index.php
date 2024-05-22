@@ -66,7 +66,7 @@ include("../include/connection.php");
                                     <div class="row">
                                         <div class="col-md-8">
                                             <?php
-                                            $app=mysqli_query($connect,"SELECT * FROM appointment");
+                                            $app=mysqli_query($connect,"SELECT * FROM appointment WHERE status ='Pendding'");
 
                                             $appoint=mysqli_num_rows($app);
                                             ?>

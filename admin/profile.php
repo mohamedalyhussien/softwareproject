@@ -107,7 +107,7 @@ session_start();
 
                                 $old = mysqli_query($connect,"SELECT * FROM admin WHERE username='$ad'");
                                 $row= mysqli_fetch_array($old);
-                                $pass =$row['password'];
+                                $pass =$row['Password'];
 
                                 if(empty($old_pass)){
                                     $error ['p']="Enter your old password!";

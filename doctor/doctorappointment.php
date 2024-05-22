@@ -28,7 +28,7 @@ session_start();
             <h5 class="text-center my-2"> Total appointment </h5>
         <?php
         
-        $query="SELECT * FROM appointment WHERE status='Pending'";
+        $query="SELECT * FROM appointment WHERE status='Pendding'";
         $res=mysqli_query($connect,$query);
 
         $output="";

@@ -42,7 +42,7 @@ include("../include/header.php");
                                         $query = "UPDATE doctors SET profile= '$img' WHERE username ='$doc'";
                                         $res= mysqli_query($connect,$query);
                                         if($res){
-                                            move_uploaded_file($_FILES['img']['tmp_name'],["img/$img"]);
+                                            move_uploaded_file($_FILES['img']['tmp_name'],"img/$img");
                                         }
                                     }
                                 }
@@ -50,13 +50,13 @@ include("../include/header.php");
 
                             <form method="post" enctype="multipart/form-data">
                                 <?php
-                                echo "<img src='img/$profiles' style='height:250px;' class='col-md-12 my-3'>"
+                                echo "<img src='img/$img' style='height:250px;' class='col-md-12 my-3'>";
                                 ?>
                                 <input type="file" name="img" class="form-control">
                                 <input type="submit" name="upload" class="btn btn-success" value="Update Profile">
                             </form>
                             <div class="my-3">
-                                <table class="table table -bordered">
+                                <table class="table table-bordered">
                                     <tr>
                                     <th colspan="2" class="text-center">Details</th>
                                     </tr>

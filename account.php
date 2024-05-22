@@ -131,6 +131,7 @@ if(count($error)==0)
                                 <label>Confirm Password</label>
                                 <input type="password" name="con_pass" class="form-control" autocomplete="off" placeholder="Confirm your Password">
                             </div>
+                            
                             <input type="submit" value="Create Account" name="create" class="btn btn-info">
                             <p>I already have an account <a href="patientlogin.php">Click Here.</a></p>
                         </form>

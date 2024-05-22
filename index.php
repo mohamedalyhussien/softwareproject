@@ -45,7 +45,7 @@ include("include/header.php");
                     <div class="d-inline-flex align-items-center">
                         <a class="text-decoration-none text-body pe-3" href=""><i class="bi bi-telephone me-2"></i>+012 345 6789</a>
                         <span class="text-body">|</span>
-                        <a class="text-decoration-none text-body px-3" href=""></i>miumedicare@example.com</a>
+                        <a class="text-decoration-none text-body px-3" href=""></i>smilearts7@gmail.com</a>
                     </div>
                 </div>
                 <div class="col-md-6 text-center text-lg-end">
@@ -78,7 +78,7 @@ include("include/header.php");
             <div class="row justify-content-start">
                 <div class="col-lg-8 text-center text-lg-start">
                     <h5 class="d-inline-block text-primary text-uppercase border-bottom border-5" style="border-color: rgba(256, 256, 256, .3) !important;">Welcome To Medinova</h5>
-                    <h1 class="display-1 text-white mb-md-4">Best Healthcare Solution In Your City</h1>
+                    <h1 class="display-1 text-white mb-md-4">Let us brighten your smile</h1>
                     <div class="pt-2">
                     </div>
                 </div>
@@ -103,11 +103,9 @@ include("include/header.php");
                         </div>
                         <div class="col-12 col-sm-7 h-100 d-flex flex-column">
                             <div class="mt-auto p-4">
-                                <h3>Salwa</h3>
-                                <h6 class="fw-normal fst-italic text-primary mb-4">Critical Care Medicine Specialist</h6>
-                                <p class="m-0">They care for people who are critically ill or injured, often heading intensive care 
-                                    units in hospitals. You might see them if your heart or other organs are failing or if 
-                                    you’ve been in an accident.</p>
+                                <h3>Sahar</h3>  
+                                <h6 class="fw-normal fst-italic text-primary mb-4">Alignment specialist</h6>
+                                <p class="m-0">specializes in the diagnosis, prevention, and treatment of oral health issues, ensuring patients maintain healthy teeth and gums. They perform procedures like cleanings, fillings, extractions, and more complex surgeries to enhance dental health and overall well-being.</p>
                             </div>
                             <div class="d-flex mt-auto border-top p-4">
                                 <a class="btn btn-lg btn-primary btn-lg-square rounded-circle me-3" href="#"><i class="fab fa-twitter"></i></a>
@@ -124,11 +122,9 @@ include("include/header.php");
                         </div>
                         <div class="col-12 col-sm-7 h-100 d-flex flex-column">
                             <div class="mt-auto p-4">
-                                <h3>Robert rafaat</h3>
-                                <h6 class="fw-normal fst-italic text-primary mb-4">Gastroenterologists</h6>
-                                <p class="m-0">specialists in digestive organs, including the stomach, 
-                                    bowels, pancreas, liver, and gallbladder.see them for abdominal pain, ulcers, diarrhea, jaundice, or 
-                                    cancers in your digestive organs. They also do a colonoscopy and other tests for colon cancer.</p>
+                                <h3>Mark Raouf</h3>
+                                <h6 class="fw-normal fst-italic text-primary mb-4">Oral hygiene experts</h6>
+                                <p class="m-0"> is a renowned pediatric dentist known for her gentle approach and ability to ease children's anxiety about dental visits. She emphasizes preventative care and education, helping young patients develop lifelong healthy dental habits..</p>
                             </div>
                             <div class="d-flex mt-auto border-top p-4">
                                 <a class="btn btn-lg btn-primary btn-lg-square rounded-circle me-3" href="#"><i class="fab fa-twitter"></i></a>
@@ -138,23 +134,8 @@ include("include/header.php");
                         </div>
                     </div>
                 </div>
-                <div class="team-item">
-                    <div class="row g-0 bg-light rounded overflow-hidden">
-                        <div class="col-12 col-sm-5 h-100">
-                            <img class="img-fluid h-100" src="images/mo.jpg" style="object-fit: cover;">
-                        </div>
-                        <div class="col-12 col-sm-7 h-100 d-flex flex-column">
-                            <div class="mt-auto p-4">
-                                <h3>Mohamed Ali</h3>
-                                <h6 class="fw-normal fst-italic text-primary mb-4">Cardiology Specialist</h6>
-                                <p class="m-0">expert in the care of your heart and blood vessels. They can treat or help you 
-                                    prevent a number of cardiovascular problems.</p>
-                            </div>
-                            <div class="d-flex mt-auto border-top p-4">
-                                <a class="btn btn-lg btn-primary btn-lg-square rounded-circle me-3" href="#"><i class="fab fa-twitter"></i></a>
-                                <a class="btn btn-lg btn-primary btn-lg-square rounded-circle me-3" href="#"><i class="fab fa-facebook-f"></i></a>
-                                <a class="btn btn-lg btn-primary btn-lg-square rounded-circle" href="#"><i class="fab fa-linkedin-in"></i></a>
-                            </div>
+                
+                            
                         </div>
                     </div>
                 </div>
@@ -169,9 +150,9 @@ include("include/header.php");
                 <div class="col-lg-3 col-md-6">
                     <h4 class="d-inline-block text-primary text-uppercase border-bottom border-5 border-secondary mb-4">Get In Touch</h4>
                
-                    <p class="mb-2"><i class="fa fa-map-marker-alt text-primary me-3"></i>123 Street, New York, USA</p>
-                    <p class="mb-2"><i class="fa fa-envelope text-primary me-3"></i>miumedicare@example.com</p>
-                    <p class="mb-0"><i class="fa fa-phone-alt text-primary me-3"></i>+012 345 67890</p>
+                    <p class="mb-2"><i class="fa fa-map-marker-alt text-primary me-3"></i>5 Amin Basha El Shamsy, Cairo, Egypt</p>
+                    <p class="mb-2"><i class="fa fa-envelope text-primary me-3"></i>SmileArtS.Dr.Mark@Gmail.Com</p>
+                    <p class="mb-0"><i class="fa fa-phone-alt text-primary me-3"></i>+20 1001510019</p>
                 </div>
                 <div class="col-lg-3 col-md-6">
                     <h4 class="d-inline-block text-primary text-uppercase border-bottom border-5 border-secondary mb-4">Quick Links</h4>
@@ -184,17 +165,7 @@ include("include/header.php");
                         <a class="text-light" href="#"><i class="fa fa-angle-right me-2"></i>Contact Us</a>
                     </div>
                 </div>
-                <div class="col-lg-3 col-md-6">
-                    <h4 class="d-inline-block text-primary text-uppercase border-bottom border-5 border-secondary mb-4">Popular Links</h4>
-                    <div class="d-flex flex-column justify-content-start">
-                        <a class="text-light mb-2" href="#"><i class="fa fa-angle-right me-2"></i>Home</a>
-                        <a class="text-light mb-2" href="#"><i class="fa fa-angle-right me-2"></i>About Us</a>
-                        <a class="text-light mb-2" href="#"><i class="fa fa-angle-right me-2"></i>Our Services</a>
-                        <a class="text-light mb-2" href="#"><i class="fa fa-angle-right me-2"></i>Meet The Team</a>
-                        <a class="text-light mb-2" href="#"><i class="fa fa-angle-right me-2"></i>Latest Blog</a>
-                        <a class="text-light" href="#"><i class="fa fa-angle-right me-2"></i>Contact Us</a>
-                    </div>
-                </div>
+                
                 <div class="col-lg-3 col-md-6">
                     <h4 class="d-inline-block text-primary text-uppercase border-bottom border-5 border-secondary mb-4">Newsletter</h4>
                     <form action="">
@@ -204,11 +175,10 @@ include("include/header.php");
                         </div>
                     </form>
                     <h6 class="text-primary text-uppercase mt-4 mb-3">Follow Us</h6>
-                    <div class="d-flex">
-                        <a class="btn btn-lg btn-primary btn-lg-square rounded-circle me-2" href="#"><i class="fab fa-twitter"></i></a>
-                        <a class="btn btn-lg btn-primary btn-lg-square rounded-circle me-2" href="#"><i class="fab fa-facebook-f"></i></a>
-                        <a class="btn btn-lg btn-primary btn-lg-square rounded-circle me-2" href="#"><i class="fab fa-linkedin-in"></i></a>
-                        <a class="btn btn-lg btn-primary btn-lg-square rounded-circle" href="#"><i class="fab fa-instagram"></i></a>
+                    <div class="d-flex">    
+                        <a class="btn btn-lg btn-primary btn-lg-square rounded-circle me-2" href="https://www.facebook.com/Smile.ArtS.Dental.Clinic.Dr.Mark.Raouf/"><i class="fab fa-facebook-f"></i></a>
+                        <a class="btn btn-lg btn-primary btn-lg-square rounded-circle me-2" href="https://eg.linkedin.com/in/mark-raouf-517243133"><i class="fab fa-linkedin-in"></i></a>
+                        <a class="btn btn-lg btn-primary btn-lg-square rounded-circle" href="https://www.instagram.com/explore/locations/100999074693876/smile-arts-dental-clinic-dr-mark-raouf/recent/"><i class="fab fa-instagram"></i></a>
                     </div>
                 </div>
             </div>

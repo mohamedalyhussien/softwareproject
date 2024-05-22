@@ -64,7 +64,7 @@ $row=mysqli_fetch_array($res);
                             <h5>My Profile</h5>
                             <form method="post" enctype="multipart/form-data">
                             <?php
-                            echo"<img src='img/" .$row['profile']."'class='col-md-12' style='height:400px;'>"
+                            echo"<img src='img/" .$row['profile']."'class='col-md-12' style='height:400px;'>";
                             ?>
 
                                 <input type="file" name="img" class="form-control my-2">

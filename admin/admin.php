@@ -109,7 +109,7 @@ session_start();
 
 
                             if(count($error)==0){
-                                $q="INSERT INTO admin(username , password,profile)
+                                $q="INSERT INTO admin(username , Password,profile)
                                 VALUES('$uname','$pass','$image')";
 
                                 $result = mysqli_query($connect,$q);

@@ -83,20 +83,26 @@ session_start();
                             $fee = $_POST['fee'];
                             $_des = $_POST['des'];
 
-                            if (empty($fee)) {
-                            } else if (empty($des)) {
-                            } else {
+                            if (empty($fee)) 
+                            {
+                                echo "<script>alert('Enter fees')</script>";
+                            } 
+                            else if (empty($_des))
+                             {
+                                echo "<script>alert('Enter description')</script>";
+                            } 
+                            else {
                                 $doc = $_SESSION['doctor'];
                                 $fname = $row['firstname'];
 
-                                $query = "INSERT into income(doctor,patient,date_dicharge,amount_paid,description) VALUES($doc,$fname,NOW(),'$fee','$des')";
+                                $query = "INSERT INTO income(doctor,patient,date_discharge,amount_paid,description) VALUES('$doc','$fname',NOW(),'$fee','$_des')";
 
                                 $res = mysqli_query($connect, $query);
 
                                 if ($res) {
                                     echo "<script>alert('you have sent invoice')</script>";
 
-                                    mysqli_query($connect, "UPDATE appointment SET status='Pendding' WHERE id='$id'");
+                                    mysqli_query($connect, "UPDATE appointment SET status='Discharge' WHERE id='$id'");
                                 }
                             }
                         }

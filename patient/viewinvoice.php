@@ -19,7 +19,7 @@ session_start();
     <div class="container-fluid">
         <div class="col-md-12">
             <div class="row">
-                <div class="col-md-2" style="margin-left:-30px">
+                <div class="col-md-2" style="margin-left:-30px;">
                     <?php
                     include("sidenav.php");
                     ?>
@@ -50,7 +50,7 @@ session_start();
 
                                     <tr>
                                         <td>Doctor</td>
-                                        <td><?php echo $row['doctor']; ?></td>
+                                        <td><?php echo $row['doctor']; ?></td>S
                                     </tr>
                                     <tr>
                                         <td>Patient</td>
